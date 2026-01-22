@@ -2,11 +2,8 @@ use proconio::input;
 
 fn main() {
     input! {
-        a: i32,
-        b: i32,
-        c: i32,
-        s: String,
+        input: String,
     }
-
-    println!("{} {}", a + b + c, s);
+    let squares: Vec<u32> = input.chars().map(|c| c.to_digit(10).unwrap()).collect();
+    println!("{}", squares.iter().sum::<u32>());
 }
