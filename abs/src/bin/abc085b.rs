@@ -1,12 +1,11 @@
 use proconio::input;
+use std::collections::HashSet;
 
 fn main() {
     input! {
-        a: i32,
-        b: i32,
-        c: i32,
-        s: String,
+        n: i32,
+        d: [i32;n],
     }
-
-    println!("{} {}", a + b + c, s);
+    let unique: HashSet<i32> = d.into_iter().collect();
+    println!("{}", unique.len());
 }
