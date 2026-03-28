@@ -16,17 +16,13 @@ fn main() {
         b.push(bi);
     }
 
-    let mut dep_p = vec![];
-    let mut dep_n = vec![];
-    for _ in 0..m {
-        dep_p.push(0);
-        dep_n.push(0);
-    }
+    let mut dep_p = vec![0; m + 1];
+    let mut dep_n = vec![0; m + 1];
     for i in 0..n {
-        dep_p[a[i] - 1] += 1;
-        dep_n[b[i] - 1] += 1;
+        dep_p[a[i]] += 1;
+        dep_n[b[i]] += 1;
     }
-    for i in 0..m {
+    for i in 1..=m {
         println!("{}", dep_n[i] - dep_p[i]);
     }
 }

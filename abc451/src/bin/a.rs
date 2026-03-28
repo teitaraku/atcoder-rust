@@ -5,9 +5,7 @@ fn main() {
         s: String,
     }
 
-    let result = s.len() == 5 || s.len() == 10;
-
-    if result {
+    if s.len() == 5 || s.len() == 10 {
         println!("Yes");
     } else {
         println!("No");
