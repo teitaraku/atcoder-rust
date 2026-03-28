@@ -2,6 +2,9 @@
 
 AtCoder の問題を Rust で解いたコードをまとめるリポジトリです。
 
+生成AIの設定ファイルが含まれていますが、コンテスト開催中はAtCoder生成AI対策ルールに則り、一切利用していません。
+過去問の練習においてのみ利用しています。
+
 ## 構成
 
 [cargo-compete](https://github.com/qryxip/cargo-compete) を使用してコンテストごとにパッケージを管理しています。
