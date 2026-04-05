@@ -8,7 +8,7 @@ fn main() {
 
     let pairs = [(1, 7), (3, 3), (5, 5), (7, 7), (9, 9)];
 
-    if pairs.iter().any(|(x, y)| *x == m && *y == d) {
+    if pairs.contains(&(m, d)) {
         println!("Yes");
     } else {
         println!("No");

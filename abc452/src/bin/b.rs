@@ -5,14 +5,14 @@ fn main() {
         h: usize,
         w: usize,
     }
-    for j in 1..=h {
-        for i in 1..=w {
-            if j == 1 || j == h || i == 1 || i == w {
+    for i in 1..=h {
+        for j in 1..=w {
+            if i == 1 || i == h || j == 1 || j == w {
                 print!("#");
             } else {
                 print!(".");
             }
         }
-        println!("");
+        println!();
     }
 }
